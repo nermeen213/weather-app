@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <!-- ****************navbar************************* -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="branding" href="/">
+                <span class="logo"><i class="fa-solid fa-cloud fa-2xl logo"></i></span>
+                <div class="logo-type">
+                    <h1 class="site-title">Weather</h1>
+                    <small class="site-description">tagline goes here</small>
+                </div>
+            </a>
+         
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> 
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Live Cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+             
+              
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+
+
+    <!-- ****************home************************* -->
+
+
+      <section id="home">
+        <div class="container  py-5" >
+            
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-10">
+                    
+                        <form class="find-location d-block">
+                            <input type="text" placeholder="Find your location..." id="search" class=" input rounded-pill w-100 border-0">
+                            <input type="button" value="Find" id="submit" class="rounded-pill button">
+                        </form>
+        
+                    
+
+                </div>
+            </div>
+            
+            
+           
+
+
+            <div class="row my-5 g-0">
+                <div class="col-md-4">
+                    <div class="box box1">
+                        <div class="forecast forecast-header1 d-flex justify-content-between bg-body p-2" id="today">
+                            <div class="day" id="currentDay"></div>
+                            <div class=" date" id="currentDate">
+                                <span id="todayNumber"></span>
+                                <span id="todayMonth"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class=" forecast-content p-2" id="current">
+                                <div class="location" id="location"></div>
+                                <div class=" d-flex align-items-center">
+                                    <div class="num" id="num"></div>
+                                  
+                                    <div class="forecast-icon">
+                                        <img id="img1" src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="" width="100">
+                                    </div>	
+                                
+                                </div>
+                                <div class="custom py-4" id="text"></div>
+                                <span class="details" id="umbrella"><i class="fa-solid fa-umbrella fa-lg"></i></span>
+                                                            <span class="details" id="wind"><i class="fa-solid fa-wind fa-lg"></i></span>
+                                                            <span class="details" id="east"><i class="fa-regular fa-compass fa-lg"></i></span>
+                                </div>
+                        </div>
+
+                    </div>
+                   
+                </div>
+                <div class="col-md-4">
+                    <div class="box box2 fit">
+                        <div class=" forecast forecast-header2 bg-body p-2">
+                            <div class="day" id="nextday"></div>
+                        </div>
+                        <div class="forecast-content p-2">
+                            <div class="forecast-icon p-4">
+                                <img class="lastImg" id="twoImg" src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" width="48">
+                            </div>
+                            <div class="degree fs-2" id="twoDegree"></div>
+                            <small class="fs-5 py-4 degreeSmall" id="degreeSmall" ></sup></small>
+                            <div class="custom py-4 lastText" id="twoText"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box box3 fit">
+                        <div class="forecast forecast-header3 bg-body p-2">
+                            <div class="day" id="nextday2"></div>
+                        </div>
+                        <div class="forecast-content p-2">
+                            <div class="forecast-icon p-4">
+                                <img class="lastImg" id="threeImg" src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" width="48">
+                            </div>
+                            <div class="degree fs-2 " id="threeDegree"></div>
+                            <small class="fs-5 py-4 degreeSmall" id="threeDegreeSmall"></small>
+                            <div class="custom py-4 lastText" id="threeText"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+      </section>
+
+
+
+    <!-- ****************contact************************* -->
+
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <form class="find-location d-block">
+                        <input type="text" placeholder="Enter Your Email To Subscribe..." id="search" class="w-100 input rounded-pill border-0">
+                        <input type="button" value="Find" id="submit" class="rounded-pill button">
+                    </form>
+                    <p class="text-white">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="social-links">
+                        <a href="#" class="rounded-circle"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-google"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
