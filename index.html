@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <title>Weather</title>
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -15,7 +16,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
             <a class="branding" href="/">
-                <span class="logo"><i class="fa-solid fa-cloud fa-2xl logo"></i></span>
+                <span class="logo"><img src="./img/logo.png" alt=""></i></span>
                 <div class="logo-type">
                     <h1 class="site-title">Weather</h1>
                     <small class="site-description">tagline goes here</small>
@@ -28,7 +29,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active " aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">News</a>
@@ -61,7 +62,7 @@
                 <div class="col-md-10">
                     
                         <form class="find-location d-block">
-                            <input type="text" placeholder="Find your location..." id="search" class=" input rounded-pill w-100 border-0">
+                            <input type="text" placeholder="Find your location..." id="search" class=" input rounded-pill w-100 border-0 form-control">
                             <input type="button" value="Find" id="submit" class="rounded-pill button">
                         </form>
         
@@ -95,9 +96,9 @@
                                     </div>	
                                 
                                 </div>
-                                <div class="custom py-4" id="text"></div>
-                                <span class="details" id="umbrella"><i class="fa-solid fa-umbrella fa-lg"></i></span>
-                                                            <span class="details" id="wind"><i class="fa-solid fa-wind fa-lg"></i></span>
+                                <div class="custom py-4 " id="text"></div>
+                                <span class="details" id="umbrella"></i></span>
+                                                            <span class="details" id="wind"></i></span>
                                                             <span class="details" id="east"><i class="fa-regular fa-compass fa-lg"></i></span>
                                 </div>
                         </div>
@@ -108,7 +109,7 @@
                 <div class="col-md-4">
                     <div class="box box2 fit">
                         <div class=" forecast forecast-header2 bg-body p-2">
-                            <div class="day" id="nextday"></div>
+                            <div class="day nextday" id="nextday"></div>
                         </div>
                         <div class="forecast-content p-2">
                             <div class="forecast-icon p-4">
@@ -124,13 +125,13 @@
                 <div class="col-md-4">
                     <div class="box box3 fit">
                         <div class="forecast forecast-header3 bg-body p-2">
-                            <div class="day" id="nextday2"></div>
+                            <div class="day nextday" id="nextday2"></div>
                         </div>
                         <div class="forecast-content p-2">
                             <div class="forecast-icon p-4">
                                 <img class="lastImg" id="threeImg" src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" width="48">
                             </div>
-                            <div class="degree fs-2 " id="threeDegree"></div>
+                            <div class="degree fs-2 " id="degree"></div>
                             <small class="fs-5 py-4 degreeSmall" id="threeDegreeSmall"></small>
                             <div class="custom py-4 lastText" id="threeText"></div>
                         </div>
@@ -153,7 +154,7 @@
             <div class="row">
                 <div class="col-md-8">
                     <form class="find-location d-block">
-                        <input type="text" placeholder="Enter Your Email To Subscribe..." id="search" class="w-100 input rounded-pill border-0">
+                        <input type="text" placeholder="Enter Your Email To Subscribe..." id="search" class="form-control w-100 input rounded-pill border-0">
                         <input type="button" value="Find" id="submit" class="rounded-pill button">
                     </form>
                     <p class="text-white">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>

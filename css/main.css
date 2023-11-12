@@ -48,7 +48,7 @@
 
 
 #home {
-    background: linear-gradient(rgba(0, 0, 0, 0.103) , rgba(0, 0, 0, 0.096)),url('../img/banner.png');
+    background: linear-gradient(rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0)),url('../img/banner.png');
     background-size: cover;
     background-position: center center;
     min-height: 100vh;
@@ -61,9 +61,10 @@ form {
    
     padding-block: 15px;
     padding-inline: 10px;
-    background-color: #1E202B;
+    background-color: #1E202B !important;
     margin: 20px 0;
-    color: #ffffff;
+    color: #ffffff !important;
+    font-size: 17px !important;
     
     
   
